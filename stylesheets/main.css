@@ -1,0 +1,181 @@
+
+/*Nav Bar*/
+
+
+
+.navbar {
+	-webkit-border-bottom-right-radius: 40px 20px;
+	-webkit-border-bottom-left-radius: 40px 20px;
+	-moz-border-radius-bottomright: 40px 20px;
+	-moz-border-radius-bottomleft: 40px 20px;
+	border-bottom-right-radius: 40px 20px;
+	border-bottom-left-radius: 40px 20px;
+	background-clip: padding-box;  
+	-moz-background-clip: padding;  
+	-webkit-background-clip: padding;
+	overflow: initial
+
+}
+
+nav .container-fluid {
+	background-color: rgba(100, 200, 300, .2);
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: black;
+	font-weight: 500;
+}
+
+.navbar-default .navbar-brand {
+	color: black;
+	font-weight: 700
+}
+
+.dropdown-toggle {
+	border-left:solid 1px;
+}
+
+/*First Page*/
+
+#page1 {
+	background-color: #ffe650;
+	height: 100%;
+	width: 100%;
+	color: white
+}
+
+#content1 {
+	text-align: center;
+	padding:100px;
+}
+
+#content1 h1 {
+	font-size: 70px;
+	text-shadow: 1px 1px black; 
+}
+
+#content1 h2 {
+	font-size: 40px
+}
+
+/*Second Page*/
+
+#page2 {
+	background-color: #0ce890;
+	height: 100%;
+	width: 100%;
+	padding-bottom:60px;
+	padding-top: 30px;
+}
+
+#works {
+	width:100%;
+	height:400px;
+	text-align: center;
+	padding: 0px 35px
+}
+
+
+#works img {
+	height: 150px;
+	width:150px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#works h5 {
+	padding-bottom: 30px
+}
+
+#page2 h1 {
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px
+}
+
+/*Third Page*/
+
+#page3 {
+	background-color: #019cde;
+	height: 100%;
+	width: 100%;
+	padding-top: 20px;
+	color: white
+}
+
+#page3 p {
+	font-size: 15px
+}
+
+#about {
+	text-align: center;
+	text-shadow: 1px 1px black; 
+	padding-top: 40px;
+	margin-top: 0
+}
+
+#about1 {
+	text-align: center;
+	padding: 0px 70px
+}
+
+#about2 {
+	padding: 30px 90px 0 90px
+}
+
+#about3 {
+	padding: 15px 90px 30px 90px
+}
+
+#about4 {
+	text-align: center;
+	padding: 0px 70px
+}
+
+#learn {
+	text-align: center;
+	padding: 30px 160px ;
+}
+
+#learn img {
+	height: 100px;
+	width: 100px;
+}
+
+/*Footer*/
+#foot {
+	text-align: center;
+}
+
+.social-icon {
+	height: 50px;
+	width: 50px;
+
+}
+
+#foot p {
+	font-weight: 900;
+	left: 50px;
+
+}
+
+
+
+
+/*Colors*/
+
+.green {
+	color: #FF550D
+}
+
+
+
+
+
+
+
+
