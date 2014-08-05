@@ -5345,7 +5345,9 @@ a.list-group-item-danger.active:focus {
 }
 .well-sm {
   padding: 9px;
-  border-radius: 3px;
+  margin-top: 4px;
+  border-radius: 5px;
+  background-color: #9d9d9d;
 }
 .close {
   float: right;

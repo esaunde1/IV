@@ -1,9 +1,31 @@
 
 /*Nav Bar*/
 
+.divider {
+	height: 50px;
+	width: 1px;
+	top: 5px;
+	border: 1px solid black;
+	border-color: rgba(39, 43, 90, 0.32)
+}
 
+.navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom {
+	width: 80%;
+	max-width: 800px
+}
 
-.navbar {
+#navLinks {
+	padding-right: 20px
+}
+
+nav a:target {
+    -webkit-transition-duration: 4s;
+    -webkit-transition-timing-function: linear;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+}
+
+.navbar	{
 	-webkit-border-bottom-right-radius: 40px 20px;
 	-webkit-border-bottom-left-radius: 40px 20px;
 	-moz-border-radius-bottomright: 40px 20px;
@@ -13,7 +35,7 @@
 	background-clip: padding-box;  
 	-moz-background-clip: padding;  
 	-webkit-background-clip: padding;
-	overflow: initial
+	overflow: hidden;
 
 }
 
@@ -31,9 +53,7 @@ nav .container-fluid {
 	font-weight: 700
 }
 
-.dropdown-toggle {
-	border-left:solid 1px;
-}
+
 
 /*First Page*/
 
@@ -41,135 +61,270 @@ nav .container-fluid {
 	background-color: #ffe650;
 	height: 100%;
 	width: 100%;
-	color: white
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 #content1 {
 	text-align: center;
-	padding:100px;
+	padding:30px;
 }
 
 #content1 h1 {
-	font-size: 70px;
-	text-shadow: 1px 1px black; 
+	font-size: 80px;
+	text-shadow: 2px 2px 2px black; 
 }
 
 #content1 h2 {
-	font-size: 40px
+	font-size: 50px;
+	text-shadow: 1px 1px black; 
+	padding-bottom: 30px
 }
 
 /*Second Page*/
 
 #page2 {
-	background-color: #0ce890;
+	background-color: #72baea;
 	height: 100%;
 	width: 100%;
-	padding-bottom:60px;
-	padding-top: 30px;
-}
+	margin-top: -20px;
+	font-family: 'Ubuntu', sans-serif;
 
-#works {
-	width:100%;
-	height:400px;
-	text-align: center;
-	padding: 0px 35px
-}
-
-
-#works img {
-	height: 150px;
-	width:150px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	display: inline;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#works h5 {
-	padding-bottom: 30px
 }
 
 #page2 h1 {
+	padding: 40px 70px 50px 70px;
 	text-align: center;
-	padding-bottom: 30px;
-	padding-top: 30px
+	text-shadow:1px 1px white;
+	font-size: 60px
 }
+
+#page2 h3 {
+	padding: 50px 150px 50px 150px;
+	text-align: center;
+/*	text-shadow:0px 1px white;*/
+	font-weight: 400;
+	text-transform: uppercase;
+	position: relative;
+	max-width: 900px;
+}
+
+#page2 p {
+	padding: 0px 50px;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 500;
+	max-width: 800px;
+}
+
 
 /*Third Page*/
 
 #page3 {
-	background-color: #019cde;
+	background-color: #e1d1c8;
+	position: relative;
 	height: 100%;
 	width: 100%;
-	padding-top: 20px;
-	color: white
+	margin-top:-20px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
-#page3 p {
-	font-size: 15px
-}
-
-#about {
+#page3 h1 {
+	text-shadow:1px 1px white;
+	font-size: 60px;
 	text-align: center;
-	text-shadow: 1px 1px black; 
-	padding-top: 40px;
-	margin-top: 0
+	padding-top: 40px
 }
 
-#about1 {
+.hiwHead {
 	text-align: center;
-	padding: 0px 70px
-}
+	font-size: 40px;
+	text-shadow: 1px 1px yellow;
+/*	font-weight: 500
+*/}
 
-#about2 {
-	padding: 30px 90px 0 90px
-}
-
-#about3 {
-	padding: 15px 90px 30px 90px
-}
-
-#about4 {
+.hiwContent {
 	text-align: center;
-	padding: 0px 70px
+	padding: 20px 70px 20px 70px;
+	font-size: 20px;
 }
 
-#learn {
+.hiwButton {
 	text-align: center;
-	padding: 30px 160px ;
+	padding-bottom: 20px
 }
 
-#learn img {
-	height: 100px;
-	width: 100px;
+#doubleColumn {
+ 	columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+
 }
+
+.board {
+	max-width: 700px
+}
+
+/*Fourth Page*/
+
+#page4 {
+
+	background-color: #30ba8f;
+	height:100%;
+	width: 100%;
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#pricingHead {
+	text-align: center;
+	font-size: 60px;
+	padding-top: 25px;	
+	text-shadow: 1px 1px white; 
+	font-weight: 700
+
+}
+
+#pricing {
+	text-align: center;
+}
+
+#pricing span {
+	font-size: 50px;
+	color: #ff0c3e;
+	font-weight: 700
+}
+
+#well1 {
+	padding: 30px 140px;
+	height: 38%;
+	max-width: 1200px
+}
+
+#pricingWell {
+	height: 240px;
+}
+
+#pricingWell-left {
+  padding: 9px;
+  margin-top: 4px;
+  border-radius: 5px;
+  background-color: #b7b7b7;
+
+}
+
+#pricingWell-right {
+  padding: 9px 9px 15px 9px;
+  margin-top: 4px;
+  border-radius: 5px;
+  background-color: #b7b7b7;
+  font-weight: 700
+}
+
+#well2 {
+	padding: 0px 140px 30px 140px;
+	height: 30%;
+	max-width: 1200px
+}
+
+/*Fifth Page*/
+
+#page5{
+	position: relative;
+	background-color: #fffadb;
+	height: 100%;
+	width: 100%;
+	padding:60px 50px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+label {
+	color: black;
+	font-size: 20px
+}
+
+legend {
+	font-size: 40px;
+	text-shadow: 1px 1px yellow;
+}
+
+form input {
+	color: black;
+	font-weight: 900
+}
+
 
 /*Footer*/
-#foot {
+footer {
 	text-align: center;
+	width: 100%;
+	height: 100px;
+	background-color: #666666;
+	position: relative;
 }
 
 .social-icon {
 	height: 50px;
 	width: 50px;
+	margin-top: 10px;
 
 }
 
-#foot p {
+footer p {
 	font-weight: 900;
-	left: 50px;
+	height: 30px;
+	width: 100%;
+	
 
 }
-
-
 
 
 /*Colors*/
 
 .green {
 	color: #FF550D
+}
+
+
+/*Other*/
+
+.myWell {
+	border: 2px solid #66a7d2;
+	padding-top: 20px;
+	height: 100%;
+	width: 
+}
+
+/*College Pages*/
+
+.collegeBackground {
+	background-color: #ffe650;
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.collegeName h1{
+	font-size: 60px;
+	text-shadow: 2px 2px 2px black; 
+	text-align: center;
+	padding: 30px 0px 60px 0px;
+}
+
+
+.insiderPhoto {
+	height: 400px;
+	width: 400px;
+}
+
+.insiderParagraph {
+	color: black;
+	height: 800px;
+}
+
+.insiderContent {
+	height: 100%;
 }
 
 

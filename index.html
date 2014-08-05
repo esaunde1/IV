@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<title>InsiderVisit</title>
 	<meta name="description" content="">
-	<meta name="InsiderVisit" content="">
+	<meta name="InsiderVisit" content="College Visits - Your Friend on Campus">
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -23,11 +23,14 @@
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<!-- 	Optional theme -->
+<!-- 	Optional theme-->	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="stylesheets/bootstrap.css">
 	<link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
+	<link rel="stylesheet" href="stylesheets/hiw.css">
+	<link rel="stylesheet" href="stylesheets/responsive.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,44 +43,89 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic,500italic,700italic|Droid+Serif:400,700,700italic,400italic|Lobster+Two:400,700italic,400italic,700' rel='stylesheet' type='text/css'>
+
 </head>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <body data-spy='scroll' data-target='.navbar' data-offset="200">
+	
 	<section id="page1">
 
 
 <!-- Nav Bar -->
 
-
-		<header class='navbar' role='banner'>
-			<div class='container navbar-fixed-top'>
-				<nav class="navbar navbar-default" role="navigation">
-				  <div class="container-fluid">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <a class="navbar-brand" href="#">Insider<span class="green">Visit</span></a>
-				    </div>
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav navbar-right">
-				      	<li><a href="#page1">Home</a></li>
-				        <li><a href="#page2">How it Works</a></li>
-				        <li><a href="#page3">About</a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Colleges <span class="caret"></span></a>
-				          <ul class="dropdown-menu" role="menu">
-				            <li><a href="#">Bing</a></li>
-				            <li><a href="#">W&M</a></li>
-				            <li><a href="#">Tulane</a></li>
-				          </ul>
-				        </li>
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
+		<header>
+			<div class='navbar' role='banner'>
+				<div class='container navbar-fixed-top'>
+					<nav class="navbar navbar-default" role="navigation">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand" href="#page1" id='nav1'>Insider<span class="green">Visit</span></a>
+					    </div>
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav navbar-right" id='navLinks'>
+					        <li><a href="#page2" id='nav2'>About</a></li>
+							<li><a href="#page3" id='nav4'>How it Works</a></li>
+					        <li><a href="#page4" id='nav4'>Pricing</a></li>
+					        <li><a href="#page5" id='nav5'>Contact</a></li>
+		 <li class="divider"></li>
+					        <li class="dropdown">
+					          <a href="" class="dropdown-toggle" data-toggle="dropdown">Colleges<span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#">Bing</a></li>
+					            <li><a href="#">W&M</a></li>
+					            <li><a href="#">Tulane</a></li>
+					          </ul>
+					        </li>
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+				</div>
 			</div>
 		</header>
 
+
+<script>
+	$("#nav1").click(function() {
+	  $('html, body').animate({
+	    scrollTop: $("#page1").offset().top
+	  }, 1000);
+	});
+
+	$("#nav2").click(function() {
+	  $('html, body').animate({
+	    scrollTop: $("#page2").offset().top
+	  }, 1000);
+	});
+
+	$("#nav3").click(function() {
+	  $('html, body').animate({
+	    scrollTop: $("#page3").offset().top
+	  }, 1000);
+	});
+
+	$("#nav4").click(function() {
+	  $('html, body').animate({
+	    scrollTop: $("#page4").offset().top
+	  }, 1000);
+	});
+	
+	$("#nav5").click(function() {
+	  $('html, body').animate({
+	    scrollTop: $("#page5").offset().top
+	  }, 1000);
+	});
+</script>
 
 <!-- First Page -->
 
@@ -88,76 +136,292 @@
 		</div>
 	</section>
 
-
 <!-- Second Page -->
 
+	<section id='page2'>
 
-	<section id="page2">
-		<div class='container'>
-			<div class="row" id='works'>
-				<h1><strong>How it Works</strong></h1>	
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<img src="images/collegemap.png">
-					<h3>Choose the colleges</h3>
-					<h5>Pick as many schools as you'd like.</h5>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<img src="images/collegemap.png">
-					<h3>Book your <span class="green">Visits</span>.</h3>
-					<h5>Make sure to find a date you are available.</h5>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<img src="images/collegemap.png">
-					<h3>Take the IV survey.</h3>
-					<h5>This helps us match you to the right Insider.</h5>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<img src="images/collegemap.png">
-					<h3>Meet your Insider and enjoy!</h3>
-					<h5>Don't forget to tip!.</h5>
-				</div>
-			</div>
-		</div>
+		<h1>About Us</h1>
+		<p>InsiderVisit helps high school students decide if a college would be a good match for them. We provides you with a student at the college you are visiting, known as an Insider. Our Insiders will be your friend on campus who will divulge information that may not be as openly talked about on the school provided tours. such as the truth about nightlife, the plusses and minuses of the dining options, and anything else you desire to know about.</p>
+		<h3><em>We are in no way affiliated with any college or university! Get the <strong>REAL</strong> view of the school, not what they <strong>WANT</strong> you to see.</em></h3>
 	</section>
+
 
 
 <!-- Third Page -->
-	<section id="page3">
-		<div class='container'>
-			<h2 id='about'>At Insider<span class="green">Visit</span>, Students Come First</h2>
-			<h3 id="about1"><em>We are in no way affiliated with any college or university! Get the REAL view of the school, not just what they WANT you to see.</em></h3>
-			<p id='about2'>Insider<span class="green">Visit</span> helps high school students decide if a college would be a good match for them. Our Insiders will be your friend on campus who will divulge information that may not be as openly talked about on the school provided tours, such as the truth about nightlife, the vibe or cliques on campus, the plusses and minuses of the dining options, a full explanation of the differences of the living communities, and anything else you desire to know about</p>
-			<p id='about3'>Insider<span class="green">Visit</span> provides you with a student at the college you are visiting, known as an Insider. Your Insider will meet with you one on one to help you better understand that college. Your Insider will be personally matched up to you based on your interests, and will act like a friend sharing their experiences. Your friend will share their objective experience, not to convince you, but to enlighten you about the college. Unlike school tours, each opportunity with Insider<span class="green">Visit</span> is unique for the prospective student. This is the perfect forum to have any questions answered, free of judgment. Insider<span class="green">Visit</span> is designed for students. We recommend that parents don't go on the <span class="green">Visit</span>, but that they ask questions at the beginning or end.</p>
-			<h3 id="about4">Learn Everything You Would Want To Know About A School,<br> Before You Get There!</h3>
-			
-			<div class="row" id='learn'>	
-				<div class="col-md-3 col-sm-6 ">
-					<img src="images/beer.png">
-					<h4>Social Life</h4>
+
+<section id="page3">
+	<h1>How It Works</h1>
+        <div class="container">
+            <div class="row">
+                <div class="board">
+                    <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                     <li class="active">
+                     <a href="#hiw1" data-toggle="tab" title="Pick a College">
+                      <span class="round-tabs one">
+                              <i class="glyphicon glyphicon-list"></i>
+                      </span> 
+                  </a></li>
+
+                  <li><a href="#hiw2" data-toggle="tab" title="Book Your Visit">
+                     <span class="round-tabs two">
+                         <i class="glyphicon glyphicon-calendar"></i>
+                     </span> 
+           		 </a>
+                 </li>
+                 <li><a href="#hiw3" data-toggle="tab" title="Meet Your Insider">
+                     <span class="round-tabs three">
+                          <i class="glyphicon glyphicon-user"></i>
+                     </span> </a>
+                     </li>
+
+                     <li><a href="#hiw4" data-toggle="tab" title="Become an Insider">
+                         <span class="round-tabs four">
+                              <i class="glyphicon glyphicon-heart"></i>
+                         </span> 
+                     </a></li>
+                     
+                     </ul></div>
+
+                     <div class="tab-content">
+
+
+
+<!-- HIW 1 -->
+
+                      <div class="tab-pane fade in active" id="hiw1">
+                      	<h3 class="hiwHead">Pick a College</h3>
+						<p class='hiwContent'> The first step as a prospective student going on a Visit is picking a college. Many prospective students choose to attend a few visits at various colleges in order to really see which one they like best.</p>
+
+						<div class='hiwButton'>
+							<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
+							 	Pick a College
+							</button>
+						</div>
+
+<!-- Modal -->
+
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						        <h4 class="modal-title" id="modalLabel">Where do you want to visit?</h4>
+						      </div>
+						      <div class="modal-body">
+								 <ul id='doubleColumn'>
+						            <li><a src="url">Binghamton University</a></li>
+						            <li>Boston University</li>
+						            <li>Carnegie Mellon University</li>
+						            <li>Colorado College</li>
+						            <li>Emory University</li>
+						            <li>Fairfield University</li>
+						            <li>Franklin & Marshall</li>
+						            <li>George Washington University</li>
+						            <li>Georgetown University</li>
+						            <li>Indiana University</li>
+						            <li>Ithaca College</li>
+						            <li>Kean University</li>
+						            <li>McGill University</li>
+						            <li>Northwestern University</li>
+						            <li>Penn State University</li>
+						            <li>Quinnipiac University</li>
+						            <li>Rider University</li>
+						            <li>Rutgers University</li>
+						            <li>Salisbury University</li>
+						            <li>SUNY Albany</li>
+						            <li>Syracuse University</li>
+						            <li>The College of New Jersey</li>
+						            <li>Tulane University</li>
+						            <li>University of Delaware</li>
+						            <li>University of Iowa</li>
+						            <li>University of Maryland</li>
+						            <li>University of Miami</li>
+						            <li>University of Michigan</li>
+						            <li>University of Pennsylvania</li>
+						            <li>University of Richmond</li>
+						            <li>University of Virginia</li>
+						            <li>University of Wisconsin</li>
+						            <li>Vanderbilt University</li>
+						            <li>Virginia Tech</li>
+						            <li>Washington and Lee University</li>
+						            <li>Washington University (St. Louis)</li>
+						            <li>William and Mary</li>
+						        </ul>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+			        </div>
+
+<!-- HIW 2 -->
+
+                      <div class="tab-pane fade" id="hiw2">
+	                     	<h3 class="hiwHead">Book Your Visit</h3>
+							 <p class='hiwContent'>Once you decide where you would like to Visit it is time to book for visit. In order to do this you must know a few details such as the date and time you plan on visiting. The most important aspect of booking your Visit is the IV Survey. We want to match you up with an Insider who is similar to you. In order for us to do that, you must tell us a little bit about yourself. </p>
+
+							 		
+							 <div class='hiwButton'>
+							 		<button class="btn btn-primary btn-lg" >
+									 	Book Your Visit!
+									</button>
+								</div>
+                          
+                      </div>
+
+<!-- HIW 3 -->
+
+                      <div class="tab-pane fade" id="hiw3">
+                      		<h3 class="hiwHead">Meet Your Insider</h3>
+                        	<p class='hiwContent'>The only thing left to do is enjoy your visit! Feel comfortable asking your Insider anything and everything. They are there to answer <em>YOUR</em> questions. We suggest going <em>WITHOUT</em> your parents... who needs them, anyway? Make sure to write down as many questions about the school as you can think of, prior to the Visit.</p>
+
+							<p class='hiwContent'>If you feel your Insider did a great job... TIP THEM! you will be in college soon and will understand how far a few dollars can go.</p>
+
+							<div class='hiwButton'>
+						 		<button class="btn btn-primary btn-lg" >
+								 	Possible Questions
+								</button>
+							</div>
+                      </div>
+
+<!-- HIW 4 -->
+
+                      <div class="tab-pane fade" id="hiw4">
+							<h3 class="hiwHead">Become an Insider</h3>
+							<p class="hiwContent">When you finally do go to college, you will learn tons of information about your school that prospective students want to know, just like you did. Become an Insider.
+							</p>
+					</div>
+	<div class="clearfix"></div>
+	</div>
+
+	</div>
+	</div>
+	</div>
+	</section>
+                   
+
+								<script>
+								$(function(){
+								$('a[title]').tooltip();
+								});
+
+								</script>
+									
+
+	
+
+
+<!-- Fourth Page -->
+
+
+	<section id='page4'>
+		<p id='pricingHead'>Pricing<p>
+
+		<div id='well1'>
+			<div class='well' id='pricingWell'>
+				<div class='col-sm-6' id='pricing'>
+					<div id='pricingWell-left'>
+						<h2>Visit 101</h2>
+						<h4>Walk-In Visit</h4>
+						<span>$45</span>
+					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/professor.png">
-					<h4>Professors</h4>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/couch.png">
-					<h4>Dorms</h4>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/fries.png">
-					<h4>Dining Halls</h4>
+				<div class='col-sm-6'>
+					<div id='pricing2'>
+						<div class='' id='pricingWell-right'>1-on-1 Visit</div>
+						<div class='' id='pricingWell-right'>60 Minutes</div>
+						<div class='' id='pricingWell-right'>Ask Anything You Want!</div>
+						<div class='' id='pricingWell-right'>Go Anywhere You Want!</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div id='well2'>
+			<div class='well' id='pricingWell'>
+				<div class='col-sm-6' id='pricing'>
+					<div id='pricingWell-left'>
+						<h2>Visit 201</h2>
+						<h4>Phone Visit</h4>
+						<span>$25</span>
+					</div>
+				</div>
+				<div class='col-sm-6'>
+					<div id='pricing2'>
+						<div class='' id='pricingWell-right'>1-on-1 Visit</div>
+						<div class='' id='pricingWell-right'>30 Minutes</div>
+						<div class='' id='pricingWell-right'>Ask Anything You Want!</div>
+						<div class='' id='pricingWell-right'>From The Comfort of Your Home!</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	</section>
+
+<!-- Fifth Page -->
+
+		<div class="container" id='page5'>
+			<div class="row">
+		      <div class="col-md-8 col-md-offset-2">
+		        <div class="well well-sm">
+		          <form class="form-horizontal" action="send_form_email.php" method="post">
+		          <fieldset>
+		            <legend class="text-center">Interested? Get in touch!</legend>
+		    
+
+		            <!-- Name input-->
+		            <div class="form-group">
+		              <label class="col-sm-4 control-label" for="name">Name</label>
+		              <div class="col-sm-8">
+		                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+		              </div>
+		            </div>
+		    
+
+		            <!-- Email input-->
+		            <div class="form-group">
+		              <label class="col-sm-4 control-label" for="email">Your E-mail</label>
+		              <div class="col-sm-8">
+		                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+		              </div>
+		            </div>
+		    
+
+		            <!-- Message body -->
+		            <div class="form-group">
+		              <label class="col-sm-4 control-label" for="message">What would you like to know?</label>
+		              <div class="col-sm-8">
+		                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+		              </div>
+		            </div>
+		    
+
+		            <!-- Form actions -->
+		            <div class="form-group">
+		              <div class="col-md-12 text-right">
+		                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+		              </div>
+		            </div>
+		          </fieldset>
+		          </form>
+		        </div>
+		      </div>
+			</div>
+		</div>
+	</section>
+
+
 		<footer>
-			<div id='foot'>
 				<a href="http://www.twitter.com/insidervisit"><img src="images/twitter.png" alt="twitter logo" class="social-icon"></a>
 		        <a href="http://www.facebook.com/insidervisit"><img src="images/facebook.png" alt="facebook logo" class="social-icon"></a>
 				<p>&copy; InsiderVisit 2014 .</p>
-			</div>
 		</footer>
-	</section>
-
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
