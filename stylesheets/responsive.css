@@ -61,6 +61,10 @@
 	#pricingWell {
 		height: 420px
 	}
+
+	.board {
+		height:700px;
+	}
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */

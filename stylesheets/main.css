@@ -107,6 +107,7 @@ nav .container-fluid {
 	text-transform: uppercase;
 	position: relative;
 	max-width: 900px;
+	margin: auto
 }
 
 #page2 p {
@@ -115,6 +116,7 @@ nav .container-fluid {
 	font-size: 17px;
 	font-weight: 500;
 	max-width: 800px;
+	margin:auto;
 }
 
 
@@ -161,9 +163,6 @@ nav .container-fluid {
 
 }
 
-.board {
-	max-width: 700px
-}
 
 /*Fourth Page*/
 
